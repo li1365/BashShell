@@ -76,7 +76,10 @@ tail -n 3 list.txt
 # pipe | is sending output to next command
 tail -n 10 list.txt | head -n 5 list.txt
 
-
+# ? local have, svn not have, not added
+# M local modified, but not commit new version
+# A local have added, svn not have
+# blank    same
 
 
 echo
