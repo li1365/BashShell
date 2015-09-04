@@ -1,8 +1,6 @@
-1_iffi.sh
-1_iffiloop.sh
-1_loop.sh
 2.sh
 comFile.txt
+folderContent13.txt
 inputParam.txt
 list.txt
 someTextFile.txt
