@@ -19,3 +19,24 @@ if (($? == 1))
 then
     echo " compiled error "
 fi
+
+wc -w first10.txt
+
+i=1
+exec 4<$1
+while read line <&4
+do
+echo $i:$line
+(( i=$i+1 ))
+done
+
+for line in $(ls f*.txt)
+do
+    echo C Program: $line
+    gcc $line
+    if(( $? == 0))
+    then echo success!
+    fi
+done
+
+
